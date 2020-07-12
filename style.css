@@ -1,0 +1,528 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400..,700;1,400..700&family=Dancing+Script&family=Quicksand:wght@400..700&family=Raleway:wght@400..900&display=swap');
+
+
+/* General Reset */
+:root {
+    margin: 0;
+    padding: 0;
+    --color-green: #2ECC71;
+    --color-litegreen: #5EFCA1;
+    --color-gray: #354546;
+    --color-litegray: #D5E5E6;
+    --color-red: #D73C2C;
+    --color-litered: #F75C4C;
+    --color-purps: #8E44AD;
+    --color-litepurps: #AB69C6;
+    --color-blue: #1297E0;
+    --color-liteblue: #29C5FF;
+    --color-orange: #FB8C00;
+    --color-liteorange: #FFA726;
+    --color-yellow: #FFEB38;
+    --color-liteyellow: #FFF176;
+    --color-darkwhite: #EEEEEE;
+    --color-white: #FFF;
+    --color-dark: #212121;
+    --base-font-size: 12px;
+    --font-body: 'Cormorant Garamon', serif;
+    --font-link: 'Dancing Script', cursive;
+    --font-header: 'Quicksand', sans-serif;
+    --font-nav: 'Raleway', sans-serif;
+    --font-special: 'Consolas', 'courier-new';
+
+}
+
+/* Font Families */
+body {
+    --font-family: var(--font-body);
+    font-size: var(--base-font-size);
+}
+.font-body {
+    font-family: var(--font-body);
+}
+
+.font-links {
+    font-family: var(--font-link);
+}
+
+.font-header {
+    font-family: var(--font-header);
+}
+
+.font-nav {
+    font-family: var(--font-nav);
+}
+.code {
+    font-family: var(--font-special);
+}
+/* Headings */
+title {
+    font-family: var(--font-header);
+}
+h1, h2, h3, h4, h5, h6 {
+    --margin: 0.5rem 0;
+    --display: block;
+    font-family: var(--font-header);
+}
+h1 {
+    font-size: calc(var(--base-font-size) * 5);
+    font-weight: 400;
+}
+h2 {
+    font-size: calc(var(--base-font-size) * 4.5);
+    font-weight: 500;
+}
+h3 {
+    font-size: calc(var(--base-font-size) * 4);
+    font-weight: 600;
+}
+h4 {
+    font-size: calc(var(--base-font-size) * 3);
+    font-weight: 700;
+}
+h5 {
+    font-size: calc(var(--base-font-size) * 2);
+}
+h6 {
+    font-size: calc(var(--base-font-size) * 1.5);
+    opacity: 0.5;
+}
+
+/* Body Base */
+body {
+    background: var(--color-white);
+    --font-family: var(--font-body);
+    font-size: calc(var(--base-font-size)* 1.4);
+    line-height: 1.3;
+}
+
+/* Links */
+a {
+    font-family: var(--font-header);
+    color: var(--color-dark);
+    font-size: var(--base-font-size);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-purps);
+}
+a:hover {
+    transform: translateX(1.5px);
+    /* font-size: calc(var(--base-font-size)+ 1.5); */
+    font-family: var(--font-header);
+    /* text-transform: uppercase; */
+    color: var(--color-blue);
+    cursor: pointer;
+}
+a:active {
+    color: var(--color-liteorange);
+}
+a:focus {
+    color: var(--color-blue);
+    transform: translateX(1.5px);
+    /* font-size: calc(var(--base-font-size)+ 1.5); */
+    font-family: var(--font-header);
+    text-transform: uppercase;
+
+}
+/* Paragraph */
+p {
+    --margin-bottom: 0.4 rem;
+    display: block;
+    --font-family: 'Cormorant Garamond', serif;
+}
+
+/*  Code */
+code {
+    font-family: Consolas, 'courier new';
+    color: var(--color-red);
+    background-color: var(--color-litegray);
+    padding: 2px;
+    font-size: 105%;
+}
+
+/*  Emphasis { em } */
+em {
+    font-family: var(--font-body);
+}
+
+/* Strong */
+strong {
+    font-family: var(--font-body);
+}
+
+/* Padding Sections */
+/* Padding Around */
+.pa-1 {
+    padding: 1rem;
+}
+.pa-2 {
+    padding: 2rem;
+}
+.pa-3 {
+    padding: 3rem;
+}
+.pa-4 {
+    padding: 4rem;
+}
+/* Padding Top */
+.ptp-1 {
+    padding-top: 1rem;
+}
+.ptp-2 {
+    padding-top: 2rem;
+}
+.ptp-3 {
+    padding-top: 3rem;
+}
+.ptp-4 {
+    padding-top: 4rem;
+}
+/* Padding Bottom */
+.pbtm-1 {
+    padding-bottom: 1rem;
+}
+.pbtm-2 {
+    padding-bottom: 2rem;
+}
+.pbtm-3 {
+    padding-bottom: 3rem;
+}
+.pbtm-4 {
+    padding-bottom: 4rem;
+}
+/* Padding Right */
+.prt-1 {
+    padding-right: 1rem;
+}
+.prt-2 {
+    padding-right: 2rem;
+}
+.prt-3 {
+    padding-right: 3rem;
+}
+.prt-4 {
+    padding-right: 4rem;
+}
+/* Padding Left */
+.plft-1 {
+    padding-left: 1rem;
+}
+.plft-2 {
+    padding-left: 2rem;
+}
+.plft-3 {
+    padding-left: 3rem;
+}
+.plft-4 {
+    padding-left: 4rem;
+}
+/* Padding Y */
+.py-1 {
+    padding: 1rem 0;
+}    
+.py-2 {
+    padding-bottom: 2rem 0;
+}
+.py-3 {
+    padding-bottom: 3rem 0;
+}
+.py-4 {
+    padding-bottom: 4rem 0
+}
+/* Padding X */    
+.px-1 {
+    padding: 0 1rem;
+}
+.px-2 {
+    padding-bottom: 0 2rem;
+}
+.px-3 {
+    padding-bottom: 0 3rem;
+}
+.px-4 {
+    padding-bottom: 0 4rem;
+}
+
+/* Navbar Items */
+nav {
+    background: rgb(36, 36, 36);
+    --padding: 0 2rem;
+    --font-family:'Raleway', sans-serif !important;
+    list-style: none;
+    letter-spacing: 1.8px;
+    box-sizing: border-box;
+}
+nav>a {
+    color: #fff;
+    font-family:'Raleway', sans-serif!important;
+}
+nav>li {
+    list-style-type: none;
+}
+.nav, .drop-menu {
+    list-style-type: none;
+}
+.brand {
+    font-size: 2em;
+    padding: 0.4rem 0.7rem 0.4rem 0;
+}
+.link {
+    padding: 0.7rem;
+    font-size: 1.3em;
+}
+.dropmenu {
+    display: none;
+}
+.dropmenu-active .dropmenu {
+    display: block;
+}
+.drop-menu > a::after {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 900;
+}
+
+.dropmenu a{
+    padding: 10px 15px;
+}
+.dropmenu-active {
+    background-color: #111;
+    border-radius: 3px;
+}
+
+/* Button Styles */
+button {
+    text-align: center;
+    border: none;
+    font-family: var(--font-header);
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor:pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.btn {
+    border-radius: 0 0 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: none;
+}
+.btn:hover {
+    top: 2px;
+}
+.btn:active {
+    top: 6px;
+}
+        /* Primary */
+.btn-primary{
+    background: var(--color-liteblue);
+    color: var(--light-dark);
+    box-shadow: var(--color-blue);
+    transition: none;
+}
+.btn-primary:hover{
+    box-shadow: 0 4px var(--color-blue);
+}
+.btn-primary:active{
+    box-shadow: 0 0 var(--color-blue);
+}
+
+        /* Success */
+.btn-go {
+    background: var(--color-litegreen);
+    color: var(--color-dark);
+    box-shadow: var(--color-green);
+    transition: none;
+}
+.btn-go:hover {
+    box-shadow: 0 4px var(--color-green);
+}
+.btn-go:active {
+    box-shadow: 0 0 var(--color-green);
+}
+        /* Danger */
+.btn-danger {
+    background: var(--color-litered);
+    color: var(--color-lite-gray);
+    box-shadow: var(--color-red);
+    transition: none;
+}
+.btn-danger:hover{
+    box-shadow: 0 4px var(--color-red);
+}
+.btn-danger:active {
+    box-shadow: 0 0 var(--color-red);
+}
+        /* Warning */
+.btn-warning {
+    background: var(--color-liteorange);
+    color: var(--color-dark);
+    box-shadow: var(--color-orange);
+    transition: none;
+}
+.btn-warning:hover {
+    box-shadow: 0 4px var(--color-orange);
+}
+.btn-warning:active {
+    box-shadow: 0 0 var(--color-orange);
+}
+        /* Info */
+.btn-info {
+    background: var(--color-liteyellow);
+    color: var(--color-dark);
+    box-shadow: var(--color-yellow);
+    transition: none;
+}
+.btn-info:hover {
+    box-shadow: 0 4px var(--color-yellow)
+}
+.btn-info:active {
+    box-shadow:0 0 var(--color-yellow);
+}
+        /* Secondary */
+.btn-secondary {
+    background: var(--color-litepurps);
+    color: var(--color-dark);
+    box-shadow: var(--color-purps);
+    transition: none;
+}
+.btn-secondary:hover {
+    box-shadow: 0 4px var(--color-purps);
+}
+.btn-secondary:active {
+    box-shadow: 0 0 var(--color-purps);
+}
+        /* Light */
+.btn-light {
+    background: var(--color-white);
+    color: var(--color-dark);
+    box-shadow: var(--color-litegray);
+    transition: none;
+}
+.btn-light:hover{
+    box-shadow: 0 4px var(--color-litegray);
+}
+.btn-light:active {
+    box-shadow: 0 0 var(--color-litegray);
+}
+        /* Dark */
+.btn-dark {
+    background: var(--color-gray);
+    color: var(--color-white);
+    box-shadow: var(--color-dark);
+    transition: none;
+}
+.btn-dark:hover{
+    box-shadow: 0 4px var(--color-darkwhite);
+}
+.btn-dark:active{
+    box-shadow: 0 0 var(--color-darkwhite);
+}
+
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 3px solid var(--color-dark);
+    padding: 2rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+form label {
+    display: block;
+    padding: 0.5rem 0.25rem;
+    font-size: 14px;
+}
+form input, textarea {
+    display: block;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 .25rem;
+    padding: .5rem;
+    min-width: 125px;
+    border: 1px solid transparent;
+    border-left: 3px solid var(--color-green);
+    border-radius: 5px;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+form input[type=submit]{
+    border-color: var(--color-green);
+    background-color: var(--color-darkwhite);
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: calc(var(--base-font-size) * 1.5);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+form input[type=submit]:hover{
+    background: var(--color-green);
+    color: white;
+    box-shadow: 0 2px var(--color-dark);
+    cursor: pointer;
+}
+.switch {
+    width: 38px;
+    border-radius: 11px;
+}
+.switch::after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    
+}
+
+/* Tablet Menu */
+@media all and (min-width: 700px) {
+    .nav {
+        justify-content: center;
+    }
+    .brand {
+        flex: 1;
+    }
+
+}
+/* Desktop Menu */
+@media all and (min-width: 960px){
+    .nav {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+        display: flex;
+    }
+    .brand {
+        order: 0;
+    }
+    .link {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .dropmenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 69px;
+    }
+
+}
