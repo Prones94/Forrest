@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>Forrest Framework Style</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <link rel="stylesheet" href="forrest.css" /> -->
+  </head>
+  <body class="dark">
+    <h1>Forrest</h1>
+    <nav>
+      <label class="logo">Forrest</label>
+      <ul class="nav">
+        <li class="link"><a href="#colors">Colors</a></li>
+        <li class="link"><a href="#navbar">Navbar</a></li>
+        <li class="link"><a href="#headings">Headings</a></li>
+        <li class="link"><a href="#type">Type</a></li>
+        <li class="link"><a href="#forms">Forms</a></li>
+        <li class="link"><a href="#footer">Footer</a></li>
+        <li class="link drop-menu">
+          <a tabindex="0">Find Me!</a>
+          <ul class="dropmenu">
+            <li class="subitem"><a href="#">Github</a></li>
+            <li class="subitem"><a href="#">LinkedIn</a></li>
+            <li class="subitem"><a href="#">Portfolio</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul></ul>
+    </nav>
+
+    <div class="container">
+      <section id="headings" class="font-header">
+        <h1>Headings</h1>
+        <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+        <h5>H5 Heading</h5>
+        <h6>H6 Heading</h6>
+
+        <pre>
+<code>&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;</code>
+			</pre>
+      </section>
+
+      <section id="type">
+        <h1 class="font-header">Paragraph styles</h1>
+        <p class="font-body">
+          This is the <strong>strong tag</strong> in a paragraph. This is the
+          <em>em tag in a paragraph</em>, elements such as &lt;strong&gt; and
+          &lt;em&gt; are inline. Here is an example of the
+          <abbr>abbreviation tag.</abbr> You'd use abbr for things like
+          <abbr title="Hyper Text Markup Language">HTML</abbr> and
+          <abbr title="Cascading Stylesheets">CSS</abbr>.
+        </p>
+
+        <pre>
+<code>&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;</code>
+			</pre>
+      </section>
+
+      <section id="buttons">
+        <h2>Buttons</h2>
+
+        <p>This is your average button. You might want to click it.</p>
+
+        <p><button class="btn btn-primary">Submit</button></p>
+
+        <pre>
+<code>&lt;button class"btn btn-primary"&gt;Submit&lt;/button&gt;</code>
+			</pre>
+
+        <p>
+          This button has consequences. You might want to think twice before
+          clicking.
+        </p>
+        <p>Custimize buttons by adding CSS variables inline or with a class.</p>
+        <p>
+          <button class="btn btn-danger">Delete</button>
+		  <button class="btn btn-go">Go</button>
+		  <button class="btn btn-warning">Warning</button>
+		  <button class="btn btn-info">Info</button>
+		  <button class="btn btn-secondary">Random</button>
+		  <button class="btn btn-light">Light</button>
+		  <button class="btn btn-dark">Dark</button>
+        </p>
+
+        <pre>
+<code>&lt;button class="btn btn-danger"&quot;&gt;Delete&lt;/button&gt;
+&lt;button class="btn btn-go"&quot;&gt;Go!&lt;/button&gt;
+&lt;button class="btn btn-warning"&quot;&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-info"&quot;&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-secondary"&quot;&gt;Random&lt;/button&gt;
+&lt;button class="btn btn-light"&quot;&gt;Light&lt;/button&gt;
+&lt;button class="btn btn-dark"&quot;&gt;Dark&lt;/button&gt;</code>
+			</pre>
+      </section>
+
+	  <section id="links">
+        <h2>Links</h2>
+        <p>
+          This <a href="#">paragraph</a> contains a couple
+          <a href="#">links</a> to show off their styles in context.
+        </p>
+      </section>
+
+      <section id="forms">
+        <h2>Forms and controls</h2>
+        <form>
+          <label>
+            <span>Text:</span>
+            <input type="text" placeholder="What is your name?" />
+          </label>
+
+          <label>
+            <span>Email:</span>
+            <input type="email" placeholder="What is your name?" />
+          </label>
+
+          <label>
+            <span>Password:</span>
+            <input type="password" placeholder="What is your name?" />
+          </label>
+
+          <label>
+            <span>Your comments</span>
+            <textarea placeholder="Your comment"></textarea>
+		  </label>
+		  <input type="submit" value="Send">
+
+          <!-- Switch with Click -->
+          <ul style="list-style: none;">
+			<li>
+			  <input id="c1" type="checkbox">
+			  <label for="c1">Checkbox</label>
+			</li>
+			<li>
+			  <input id="r1" type="radio" name="radio" value="1">
+			  <label for="r1">Radio</label>
+			</li>
+			<li>
+			  <input id="s1" type="checkbox" class="switch">
+			  <label for="s1">Switch</label>
+			</li>
+		  </ul>
+        </form>
+      </section>
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>
+            About Me
+          </h2>
+          <div class="content">
+            <p></p>
+            <div class="social">
+              <a href="https://facebook.com/coding.np"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="https://instagram.com/coding.np"
+                ><span class="fab fa-instagram"></span
+              ></a>
+              <a href="https://youtube.com/c/codingnepal"
+                ><span class="fab fa-youtube"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="left box">
+            <h2>
+              Contact 
+            </h2>
+            <div class="content">
+              <p></p>
+              <div class="social">
+                <a href="https://facebook.com/coding.np"
+                  ><span class="fas fa-phone-alt"></span
+                ></a>
+                <a href="#"><span class="fas fa-envelope"></span></a>
+                <a href="https://instagram.com/coding.np"
+                  ><span class="fab fa-github-alt"></span
+                ></a>
+                <a href="https://youtube.com/c/codingnepal"
+                  ><span class="fab fa-slack"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        <div class="left box">
+          <h2>
+            Address
+          </h2>
+          <div class="content">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
